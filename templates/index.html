@@ -1,34 +1,315 @@
-{% extends 'layout.html' %}
-
 {% load static %}
 
+<!DOCTYPE HTML>
+<html>
+{% include 'includes/head.html' %}
+<body>
 
-{% block content %}
+{% include 'includes/navbar.html' %}
 
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="myHeader">Resume App</h1>
+<div id="colorlib-page">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="colorlib-navbar-brand">
+                        <a class="colorlib-logo" href="/"><span>DG</span></a>
+                    </div>
+                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="colorlib-about">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">About</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-5 animate-box">
+                    <div class="owl-carousel3">
+                        <div class="item">
+                            <img class="img-responsive about-img" src="{% get_media_prefix %}images/a.jpg"
+                                 alt="html5 bootstrap template by colorlib.com">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive about-img" src="{% get_media_prefix %}images/1.jpg"
+                                 alt="html5 bootstrap template by colorlib.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-push-1 animate-box">
+                    <div class="about-desc">
+                        <div class="owl-carousel3">
+                            <div class="item">
+                                <h2><span>{{ home_banner_name }}</span></h2>
+                            </div>
+                            <div class="item">
+                                <h2><span>{{ home_banner_title }}</span></h2>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="rotate">
+                                <h2 class="heading">About</h2>
+                            </div>
+                            <p>{{ home_about }}</p>
+                            <p class="colorlib-social-icons">
+                                <a href="https://www.linkedin.com/in/deniz-germir-8a1498238/"><i
+                                        class="icon-linkedin"></i></a>
+                                <a href="https://twitter.com/deniz_germir"><i class="icon-twitter2"></i></a>
+                                <a href="{% url 'contact' %}"><i class="icon-mail2"></i></a>
+                                <a href="{% url 'contact' %}"><i class="icon-phone-call"></i></a>
+
+                            </p>
+                            <div class="btn-container">
+                                <a href={{ cv_en }} class="btn btn-primary btn-outline">CV (En)</a>
+                                <a href={{ cv_tr }} class="btn btn-primary btn-outline">CV (Tr)</a>
+                            </div>
+                            <p><a href="/contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="colorlib-services">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-flex">
+                        <div class="one-third">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+                                    <span>My Services</span>
+                                    <h2>{{ skill_main_title }}</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="rotate">
+                                        <h2 class="heading">Services</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_1 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_1_1 }}</li>
+                                            <li>{{ skill_1_2 }}</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_3 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_3_1 }}</li>
+                                            <li>{{ skill_3_2 }}</li>
+                                            <li>{{ skill_3_3 }}</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_2 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_2_1 }}</li>
+                                            <li>{{ skill_2_2 }}</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_4 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_4_1 }}</li>
+                                            <li>{{ skill_4_2 }}</li>
+                                            <li>{{ skill_4_3 }}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-forth services-img"
+                             style="background-image: url(../media/images/skills.jpg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto asperiores aspernatur consequatur culpa ducimus illum iste numquam obcaecati odio rerum sit, soluta suscipit, temporibus totam ut vitae voluptate voluptates.</span><span>Accusamus accusantium alias aut consectetur, deleniti dolor et explicabo fugit hic iure necessitatibus nostrum officia pariatur perspiciatis quod repellat sed sit tenetur veniam vero! Aliquam amet assumenda odit quasi tempore.</span><span>Accusamus ad delectus dolor ea, fugit impedit ipsam maiores officia possimus quis recusandae, repellendus repudiandae sapiente! Atque excepturi expedita facere, labore mollitia nulla repellat voluptatibus. Consectetur corporis earum eligendi facere?</span><span>Ad aliquid atque aut, autem beatae, commodi esse est et hic in ipsa modi natus neque nisi numquam odio omnis perspiciatis quidem quis quod rem sunt tempore vel voluptas voluptatum.</span><span>Assumenda ea ex ipsam laboriosam laudantium minus modi tenetur voluptate? Dolorum eligendi neque rem repudiandae. Adipisci, aliquid consectetur distinctio eaque esse inventore laboriosam, laudantium libero magnam mollitia nesciunt quae, unde.</span><span>Adipisci autem delectus doloremque ducimus eius esse facilis fugit illo illum, libero minima nam necessitatibus perspiciatis quam quia similique sint ullam voluptas voluptatem voluptatibus. Consectetur dolorem in nisi quis reiciendis.</span><span>Animi eos error ipsam labore quasi repudiandae veritatis? Architecto atque, est fuga fugiat inventore maxime molestiae quasi quod tenetur! Assumenda at cumque dolorum expedita molestias nihil numquam provident saepe vitae.</span><span>Cum ducimus fuga optio, pariatur quas quos saepe tempore totam. Ad adipisci alias aliquam, cum delectus deserunt, dignissimos doloribus est id molestiae nemo nobis nostrum, odit officiis optio perferendis unde!</span><span>Accusamus aliquid asperiores at, autem delectus fugiat harum id laboriosam libero maiores minus nam natus nihil nulla numquam quasi quidem quis quo, quos repellendus tenetur vel veritatis voluptate. Fugiat, harum!</span><span>Aspernatur esse est fuga iste porro quasi rerum tempore tenetur! Accusamus aut culpa cupiditate dignissimos explicabo laboriosam, officiis omnis perferendis quidem veritatis. Blanditiis eaque quae qui quia temporibus. Consectetur, impedit?</span>
-    </p>
-
-    <div class="card" style="width: 18rem;">
-        <img src="{% get_media_prefix %}Lion_d'Afrique.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div id="colorlib-work">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Works</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                    <span>Portfolio</span>
+                    <h2>{{ project_title }}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rotate">
+                        <h2 class="heading">Portfolio</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="work-entry animate-box">
+                        <a href="/work" class="work-img" style="background-image: url(../media/images/robot.jpg);">
+                            <div class="display-t">
+                                <div class="work-name">
+                                    <h2>{{ project_1 }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="desc">
+                                <p>{{ project_1_short_explain }}</p>
+                                <p class="read"><a href="{% url 'work' %}">View details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="work-entry animate-box">
+                        <a href="/work" class="work-img" style="background-image: url(../media/images/uav.jpg);">
+                            <div class="display-t">
+                                <div class="work-name">
+                                    <h2>{{ project_2 }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="desc">
+                                <p>{{ project_2_short_explain }}</p>
+                                <p class="read"><a href="{% url 'work' %}">View Details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="work-entry animate-box">
+                        <a href="/work" class="work-img" style="background-image: url(../media/images/pcb.jpg);">
+                            <div class="display-t">
+                                <div class="work-name">
+                                    <h2>{{ project_3 }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="desc">
+                                <p>{{ project_3_short_explain }}</p>
+                                <p class="read"><a href="{% url 'work' %}">View details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="work-entry animate-box">
+                        <a href="/work" class="work-img" style="background-image: url(../media/images/micro.jpg);">
+                            <div class="display-t">
+                                <div class="work-name">
+                                    <h2>{{ project_4 }}</h2>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="desc">
+                                <p>{{ project_4_short_explain }}</p>
+                                <p class="read"><a href="{% url 'work' %}">View details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-{% endblock %}
 
-{% block extra_scripts %}
-    <script>
-        console.log('Hello World');
-    </script>
-{% endblock %}
+    <div id="colorlib-testimony">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Words</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                    <span>Words</span>
+                    <h2>Scientists Say</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rotate">
+                        <h2 class="heading">Says</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row animate-box">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_1 }}</p>
+                                    <span>{{ sentence_1_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_2 }}</p>
+                                    <span>{{ sentence_2_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_3 }}</p>
+                                    <span>{{ sentence_3_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'includes/footer.html' %}
+
+</div>
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Waypoints -->
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<!-- Owl Carousel -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+
+<!-- Main JS (Do not remove) -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
+

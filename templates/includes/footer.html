@@ -1,0 +1,67 @@
+{% load static %}
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-pb-sm">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h2>Let's Talk</h2>
+                            <p>{{ footer_about }}</p>
+                            <p>{{ contact_phone }}</p>
+                            <p><a href="https://mail.google.com/mail/u/0/#inbox">{{ contact_mail }}</a></p>
+                            <p class="colorlib-social-icons">
+                                <a href="https://www.linkedin.com/in/deniz-germir-8a1498238/"><i
+                                        class="icon-linkedin"></i></a>
+                                <a href="https://twitter.com/deniz_germir"><i class="icon-twitter2"></i></a>
+                                <a href="{% url 'contact' %}"><i class="icon-mail2"></i></a>
+                                <a href="{% url 'contact' %}"><i class="icon-phone-call"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-pb-sm">
+                    <h2>Important Writings</h2>
+                    <div class="f-entry">
+                        <a href="#" class="featured-img" style="background-image: url(../media/images/img-1.jpg);"></a>
+                        <div class="desc">
+                            <span>April 12, 2024</span>
+                            <h3><a href="https://www.britannica.com/biography/Nikola-Tesla">Tesla's Life</a></h3>
+                        </div>
+                    </div>
+                    <div class="f-entry">
+                        <a href="#" class="featured-img" style="background-image: url(../media/images/img-2.jpg);"></a>
+                        <div class="desc">
+                            <span>February 9, 2023</span>
+                            <h3><a href="https://www.britannica.com/technology/electric-motor">Electric Motors</a></h3>
+                        </div>
+                    </div>
+                    <div class="f-entry">
+                        <a href="#" class="featured-img" style="background-image: url(../media/images/img-3.jpg);"></a>
+                        <div class="desc">
+                            <span>February 15, 2023</span>
+                            <h3><a href="https://dergipark.org.tr/tr/download/article-file/2181975">Defence Industry</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-pb-sm">
+                    <h2>My Blogs</h2>
+                    <h4>To Read My Blogs</h4>
+                    <h3><a href="https://denizgermir.blogspot.com/">denizgermir.blogspot.com</a></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        &copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i>
+                        by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+{% include 'includes/head.html' %}
+<body>
+{% include 'includes/navbar.html' %}
+
+
+<div id="colorlib-page">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="colorlib-navbar-brand">
+                        <a class="colorlib-logo" href="/"><span>DG</span></a>
+                    </div>
+                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="colorlib-services">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="services-flex">
+                        <div class="one-third">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+                                    <span>My Services</span>
+                                    <h2>{{ skill_main_title }}</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="rotate">
+                                        <h2 class="heading">Services</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_1 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_1_1 }}</li>
+                                            <li>{{ skill_1_2 }}</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_3 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_3_1 }}</li>
+                                            <li>{{ skill_3_2 }}</li>
+                                            <li>{{ skill_3_3 }}</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_2 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_2_1 }}</li>
+                                            <li>{{ skill_2_2 }}</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="services animate-box">
+                                        <h3>{{ skill_4 }}</h3>
+                                        <ul>
+                                            <li>{{ skill_4_1 }}</li>
+                                            <li>{{ skill_4_2 }}</li>
+                                            <li>{{ skill_4_3 }}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-forth services-img"
+                             style="background-image: url(../media/images/skills.jpg);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-progress">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                    <span>Skills</span>
+                    <h2>My Soft-Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h2 class="progress-head">{{ soft_skill_1 }}</h2>
+                    <div class="progress blue">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <div class="progress-value">80%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h2 class="progress-head">{{ soft_skill_2 }}</h2>
+                    <div class="progress yellow">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <div class="progress-value">85%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h2 class="progress-head">{{ soft_skill_3 }}</h2>
+                    <div class="progress pink">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <div class="progress-value">75%</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 text-center">
+                    <h2 class="progress-head">{{ soft_skill_4 }}</h2>
+                    <div class="progress green">
+		                <span class="progress-left">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <span class="progress-right">
+		                    <span class="progress-bar"></span>
+		                </span>
+                        <div class="progress-value">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-testimony">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="bold">Words</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+                    <span>Words</span>
+                    <h2>Scientists Say</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rotate">
+                        <h2 class="heading">Says</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row animate-box">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_1 }}.</p>
+                                    <span>{{ sentence_1_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_2 }}</p>
+                                    <span>{{ sentence_2_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-12 text-center">
+                            <div class="testimony">
+                                <blockquote>
+                                    <p>{{ sentence_3 }}</p>
+                                    <span>{{ sentence_3_writer }}</span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'includes/footer.html' %}
+
+
+</div>
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- jQuery Easing -->
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Waypoints -->
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<!-- Owl Carousel -->
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+
+<!-- Main JS (Do not remove) -->
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
+
